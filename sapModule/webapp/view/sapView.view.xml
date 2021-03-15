@@ -1,9 +1,13 @@
-<mvc:View controllerName="mt.sapModule.controller.sapView" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="mt.sapModule.controller.sapView" displayBlock="true">
 	<Shell id="shell">
 		<App id="app">
 			<pages>
 				<Page id="page" title="{i18n>title}">
-					<content></content>
+					<content>
+					    <List noDataText="Drop list items here" id="list0">
+					    </List>
+					    <ToggleButton xmlns="sap.m" text="Toggle Button" id="button0" activeIcon="sap-icon://action-settings" icon="sap-icon://activate"/>
+					</content>
 				</Page>
 			</pages>
 		</App>
